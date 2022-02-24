@@ -17,30 +17,31 @@
     <video id="background" src="Resources\Video\BG.mp4" muted loop autoplay></video>
     <nav>
       
-      <ul id="Nav-buttons">
-        <li><div id="Lang">Lang</div></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul id="navigation">
+        <li><div id="lang">Lang</div></li>
+        <li><a class="nav-button" href="#">Home</a></li>
+        <li><a class="nav-button" href="#">About Me</a></li>
+        <li><a class="nav-button" href="#">Projects</a></li>
+        <li><a class="nav-button" href="#">Contact</a></li>
       </ul>
-      <div id="Branding">
+      <div id="branding">
         <span>Nat Morán</span>
         <img src="Resources\Images\Logo.svg" alt="Logo"
         /></a>
       </div>
     </nav>
+    <section id="section1">
     <main>
       <h1>Every good product needs an excellent design.</h1>
-      <p>
+      <p id="description">
         Hey! I am Natanael Morán (yes, that’s my name but you can call me
         “Nat”). <br />
         I am a UI designer with 2+ year of experience, and I am this world of
         design <br />
         due to my willing to improve everything I see.
       </p>
-      <button class="CTA">Read More</button>
-      <p>
+      <a class="cta" href="test.html">Read More</a>
+      <p id="note">
         If you keep scrolling, you will see some of the projects that I have
         worked on, but before you continue, I want to let you know that what you
         are looking at right now is a high fidelity prototype, I mean, I created
@@ -50,15 +51,16 @@
         tools (I still working on it, so you might see some components or
         buttons disabled).
       </p>
+      
     </main>
-    <aside>
-      <img src="Resources\Images\1642019484605.png" alt="" />
-    </aside>
+    <img id="nat" src="Resources\Images\1642019484605.png" alt="" />
+  </section>
     <h3>Most recent projects</h3>
-    <div class="Projects Home">
-      <div class="Project-card">
-        <div class="Image-card"></div>
-        <div class="Logo-card"></div>
+    <div class="projects Home">
+      <div class="project-card">
+        <div class="image-card">
+        <div class="logo-card"></div>
+      </div>
         <h4>Title</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
@@ -66,11 +68,12 @@
           voluptatibus aliquam totam. Ab aut repudiandae maxime nam dolore quod
           veniam error.
         </p>
-        <button class="CTA">See Project</button>
+        <a class="cta" href="#">See Project</a>
       </div>
-      <div class="Project-card">
-        <div class="Image-card"></div>
-        <div class="Logo-card"></div>
+      <div class="project-card">
+        <div class="image-card">
+        <div class="logo-card"></div>
+      </div>
         <h4>Title</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
@@ -78,11 +81,12 @@
           voluptatibus aliquam totam. Ab aut repudiandae maxime nam dolore quod
           veniam error.
         </p>
-        <button class="CTA">See Project</button>
+        <a class="cta" href="#">See Project</a>
       </div>
-      <div class="Project-card">
-        <div class="Image-card"></div>
-        <div class="Logo-card"></div>
+      <div class="project-card">
+        <div class="image-card">
+        <div class="logo-card"></div>
+      </div>
         <h4>Title</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
@@ -90,10 +94,11 @@
           voluptatibus aliquam totam. Ab aut repudiandae maxime nam dolore quod
           veniam error.
         </p>
-        <button class="CTA">See Project</button>
+        <a class="cta" href="#">See Project</a>
       </div>
-      <button class="CTA">See More</button>
+      
     </div>
+    <a class="cta" href="#">See More</a>
     <footer>
       <div><h2>¡Gracias por llegar hasta acá!</h2></div>
       <div>

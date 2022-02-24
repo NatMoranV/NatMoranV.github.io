@@ -18,54 +18,185 @@ body{
     margin: 0;
     padding: 0;
     font-family: "poppins" , sans-serif;
+    color: var(--gris-claro);
 }
 
 #background{
     position: fixed;
     z-index: -1;
     top: 0;
-    width: 99vw;
 }
 
 nav{
-    width: 99vw;
+    width: 100%;
     height: 80px;
     position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
-     align-items: center;
+    align-items: center;
     background: rgba(11, 19, 33, .5);
     backdrop-filter: blur(5px);
+    font-weight: 200;
 }
 
-#Nav-buttons{
+#navigation{
     list-style: none;
     display: inline-flex;
     align-items: center;
     width: 50%;
 }
 
-#Lang{
+#lang{
     margin-right: 20px;
+    color: white;
 }
 
-#Nav-buttons a{
+.nav-button{
     text-decoration: none;
-  font-size: 1em;
-  color: white;
-  margin-right: 20px;
+    font-size: 1em;
+    color: white;
+    margin-right: 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding-bottom: .3rem;
 }
 
-#Branding{
+.nav-button:hover{
+    transform: scale(1.1);
+    color: var(--verde);
+    font-weight: 500;
+    text-shadow: 0 0 1px var(--verde);
+}
+
+.nav-button::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--verde);
+    transition: width 0.3s ease-in-out;
+    box-shadow: 0 0 5px var(--verde);
+}
+
+.nav-button:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+#branding{
     display: inline-flex;
     align-items: center;
     margin: 2%;
 }
 
-#Branding span{
+#branding span{
     font-size: 1.5em;
     font-weight: 600;
     color: var(--verde) ;
     margin-right: 20px;
+}
+
+#section1{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+    height: 92vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    justify-content: space-around;
+    padding-left: 4%;
+    
+}
+
+h1{
+    font-weight: bold;
+    font-size: 4.5em;
+}
+
+#description{
+    font-size: 1.5em;
+}
+
+.cta{
+    box-sizing: border-box;
+    width: fit-content;
+    display: flex;
+    transition: 0.3s;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid var(--verde);
+    box-shadow: 0 0 5px var(--verde);
+    color: var(--verde);
+    font: 600 16px "poppins", sans-serif;
+    text-decoration: none;
+}
+
+.cta:hover{
+    background-color: var(--verde);
+    box-shadow: 0 0 20px var(--verde);
+    color: var(--azul);
+}
+aside{
+    display: flex;
+    width: 49%;
+    justify-content:right;
+}
+
+#nat{
+    height:100% ;
+}
+
+h3{
+    text-align: center;
+    margin: 5rem;
+    font-size: 2rem;
+}
+.projects{
+    margin-left: 4%;
+    width: 92%;
+    display: grid;
+    gap: 5rem 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+}
+
+.project-card{
+    padding: 1rem;
+    height: 640px;
+    margin: 0 2rem;
+    border-radius: .5rem;
+    background: transparent linear-gradient(139deg, #00000033 0%, #98989873 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF33;
+    backdrop-filter: blur(5px);
+}
+
+.image-card{
+    position: relative;
+    width: 100%;
+    height: 45%;
+    background-color: red;
+    border-radius: .5rem ;
+}
+
+.logo-card{
+    position: absolute;
+    background-color: blue;
+    width: 30%;
+    height: 45%;
+    left: 35%;
+    top: 28.5%;
+    border-radius: .5rem;
+}
+.project-card .cta{
+    margin: auto;
+    margin-top: 7rem;
 }
