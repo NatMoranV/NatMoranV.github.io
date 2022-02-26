@@ -14,17 +14,27 @@
     --unnamed-color-b5b5b5: #B5B5B5;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#background{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
 body{
+    background-color: var(--azul);
     margin: 0;
     padding: 0;
     font-family: "poppins" , sans-serif;
     color: var(--gris-claro);
-}
-
-#background{
-    position: fixed;
-    z-index: -1;
-    top: 0;
 }
 
 nav{
@@ -32,7 +42,7 @@ nav{
     height: 80px;
     position: fixed;
     top: 0;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     background: rgba(11, 19, 33, .5);
@@ -101,29 +111,47 @@ nav{
     margin-right: 20px;
 }
 
+#nat{
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 55%;
+    max-width: 49%;
+    max-height: 94%;
+    border-radius: 0 0 70% 0;
+    transition: .5s ease-in-out;
+}
+
+h1{ max-width: 42%;
+    align-self: flex-start;
+    text-align: left;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.4em;
+    margin-top: 12vh;
+    margin-left: 5%;
+    color: var(--verde);
+}
+
 #section1{
-    display: flex;
-    margin-top: 80px;
-    justify-content: space-between;
-    height: 92vh;
+    margin-top: 2rem;
+    height: 45rem;
+    padding: 0 5%;
 }
 
 main{
+    height: 100%;
     display: flex;
     flex-direction: column;
-    width: 49%;
     justify-content: space-around;
-    padding-left: 4%;
-    
+    text-align: center;
+    align-items: center;    
+    transition: .3s ease-in-out;
 }
 
-h1{
-    font-weight: bold;
-    font-size: 4.5em;
-}
 
 #description{
-    font-size: 1.5em;
+    font-size: 1.2rem;
 }
 
 .cta{
@@ -146,37 +174,37 @@ h1{
     box-shadow: 0 0 20px var(--verde);
     color: var(--azul);
 }
-aside{
-    display: flex;
-    width: 49%;
-    justify-content:right;
-}
 
-#nat{
-    height:100% ;
-}
 
-h3{
+#section2 h2{
+    margin: 1rem;
+    font-size: 1.5rem;
     text-align: center;
-    margin: 5rem;
-    font-size: 2rem;
+    color: var(--verde);
 }
+
+#section2 .cta{
+    margin: 3rem auto;
+}
+
 .projects{
-    margin-left: 4%;
-    width: 92%;
+    margin: 5rem 0 3rem 0;
     display: grid;
-    gap: 5rem 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    gap: 3rem 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 }
 
 .project-card{
     padding: 1rem;
-    height: 640px;
+    height: 35rem;
     margin: 0 2rem;
     border-radius: .5rem;
     background: transparent linear-gradient(139deg, #00000033 0%, #98989873 100%) 0% 0% no-repeat padding-box;
     border: 1px solid #FFFFFF33;
     backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .image-card{
@@ -196,7 +224,70 @@ h3{
     top: 28.5%;
     border-radius: .5rem;
 }
+
+.project-card h4{
+    align-self: flex-start;
+    font-size: 1.5rem;
+}
+
 .project-card .cta{
-    margin: auto;
-    margin-top: 7rem;
+    align-self: center;
+}
+
+@media (orientation: landscape){
+    #section1{
+        height: 35rem;
+        margin-bottom: 8rem;
+    }
+}
+
+@media screen and (min-width: 576px){
+    h1{
+        font-size: 2.5rem;
+        transition: .3s ease-in-out;
+    }
+
+
+@media screen and (min-width: 768px){
+    h1{
+        max-width: 50%;
+        font-size: 3.6rem;
+        transition: .3s ease-in-out;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    h1{
+        font-size: 4.5rem;
+        transition: .3s ease-in-out;
+    }
+    #nat{
+        width: 35%;
+}
+
+
+@media screen and (min-width: 1200px){
+
+    h1{
+        font-size: 5rem;
+        transition: .3s ease-in-out;
+    }
+    main{
+        width: 50%;
+        transition: .3s ease-in-out;
+        text-align: left;
+        align-items: flex-start;
+    }
+    #nat{
+        width: 55%;
+        border-radius: 0;
+        transition: .5s ease-in-out;
+    }
+    #description{
+        font-size: 2rem;
+    }
+    #section2 h2{
+        font-size: 2.5rem;
+    }
 }
