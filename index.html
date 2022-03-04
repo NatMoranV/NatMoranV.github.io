@@ -11,98 +11,111 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/bc274c0b86.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/bc274c0b86.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="\Js.app.js"></script>
-    <link rel="stylesheet" href="\Css\style.css">
+    <link rel="stylesheet" href="\Css\style.css" />
   </head>
   <body>
-    <video id="background" src="\Resources\Video\BG.mp4" muted loop autoplay></video>
-    <nav>
-      <ul id="navigation">
-        <li><div id="lang">Lang</div></li>
-        <li><a class="nav-button" href="#">Home</a></li>
-        <li><a class="nav-button" href="#">About Me</a></li>
-        <li><a class="nav-button" href="#">Projects</a></li>
-        <li><a class="nav-button" href="#">Contact</a></li>
-      </ul>
-      <div id="branding">
-        <span>Nat Morán</span>
-        <img src="\Resources\Images\Logo.svg" alt="Logo"
-        /></a>
+    <video
+      id="background"
+      src="\Resources\Video\BG.mp4"
+      muted
+      loop
+      autoplay
+    ></video>
+    <div class="navbar">
+      <div class="container flex-nav">
+          <div class="nav-header">
+              <a href="#"><img id="logo" src="Resources\Images\Logo.svg" alt=""> <span>Nat Morán</span></a>
+              <button class="nav-toggle" id="navToggle">
+                  <i class="fas fa-ellipsis-vertical"></i>
+              </button>
+          </div>
+          <nav class="nav-links" id="nav-links">
+              <ul>
+                  <li class="nav-link"><a href="#">Home</a></li>
+                  <li class="nav-link"><a href="#">Products</a></li>
+                  <li class="nav-link"><a href="#">About</a></li>
+                  <li class="nav-link"><a href="#"><span>Contact</span></a></li>
+              </ul>
+          </nav>
       </div>
-    </nav>
-      <img id="nat" src="\Resources\Images\Nat.png" alt="" />
-      <h1>Every good product needs an excellent design.</h1>
+  </div>
+  <script src="./js/app.js"></script>
+    <img id="nat" src="\Resources\Images\Nat.png" alt="" />
+    <h1>Every good product needs an excellent design.</h1>
     <section id="section1">
-         <main> 
+      <main>
         <p id="description">
-        Hey! I am Natanael Morán. <br>
-        (yes, that’s my name but you can call me
-        <b> “Nat”</b>) 
-        <br>
-        <br>
-        I am a UI designer with 2+ year of experience, and I am this world of
-        design due to my willing to improve everything I see.
-      </p>
-      <a class="cta" href="test.html">Read More</a>
-      <p id="note">
-        If you keep scrolling, you will see some of the projects that I have
-        worked on, but before you continue, I want to let you know that what you
-        are looking at right now is a high fidelity prototype, I mean, I created
-        from scratch all the assets, the interactions, transitions and
-        animations using Adobe XD and the background video using After
-        Effects. This is not a website nor code; I created this by using design
-        tools (I still working on it, so you might see some components or
-        buttons disabled).
-      </p>
-    </main>
-  </section>
-  <section id="section2">
-    <h2>Most recent projects</h2>
-    <div class="projects Home">
-      <div class="project-card">
-        <div class="image-card">
-        <div class="logo-card"></div>
-      </div>
-        <h4>Title</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-          dolores, quia aut asperiores, accusantium ratione porro sit, corporis
-          voluptatibus aliquam totam. Ab aut repudiandae maxime nam dolore quod
-          veniam error.
+          Hey! I am Natanael Morán. <br />
+          (yes, that’s my name but you can call me
+          <b> “Nat”</b>)
+          <br />
+          <br />
+          I am a UI designer with 2+ year of experience, and I am this world of
+          design due to my willing to improve everything I see.
         </p>
-        <a class="cta" href="#">See Project</a>
-      </div>
-      <div class="project-card">
-        <div class="image-card">
-        <div class="logo-card"></div>
-      </div>
-        <h4>Title</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-          dolores, quia aut asperiores, accusantium ratione porro sit, corporis
-          voluptatibus aliquam totam. Ab aut repudiandae maxime nam dolore quod
-          veniam error.
+        <a class="cta" href="test.html">Read More</a>
+        <p id="note">
+          If you keep scrolling, you will see some of the projects that I have
+          worked on, but before you continue, I want to let you know that what
+          you are looking at right now is a high fidelity prototype, I mean, I
+          created from scratch all the assets, the interactions, transitions and
+          animations using Adobe XD and the background video using After
+          Effects. This is not a website nor code; I created this by using
+          design tools (I still working on it, so you might see some components
+          or buttons disabled).
         </p>
-        <a class="cta" href="#">See Project</a>
+      </main>
+    </section>
+    <section id="section2">
+      <h2>Most recent projects</h2>
+      <div class="projects Home">
+        <div class="project-card">
+          <div class="image-card">
+            <div class="logo-card"></div>
+          </div>
+          <h4>Title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            dolores, quia aut asperiores, accusantium ratione porro sit,
+            corporis voluptatibus aliquam totam. Ab aut repudiandae maxime nam
+            dolore quod veniam error.
+          </p>
+          <a class="cta" href="#">See Project</a>
+        </div>
+        <div class="project-card">
+          <div class="image-card">
+            <div class="logo-card"></div>
+          </div>
+          <h4>Title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            dolores, quia aut asperiores, accusantium ratione porro sit,
+            corporis voluptatibus aliquam totam. Ab aut repudiandae maxime nam
+            dolore quod veniam error.
+          </p>
+          <a class="cta" href="#">See Project</a>
+        </div>
+        <div class="project-card">
+          <div class="image-card">
+            <div class="logo-card"></div>
+          </div>
+          <h4>Title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            dolores, quia aut asperiores, accusantium ratione porro sit,
+            corporis voluptatibus aliquam totam. Ab aut repudiandae maxime nam
+            dolore quod veniam error.
+          </p>
+          <a class="cta" href="#">See Project</a>
+        </div>
       </div>
-      <div class="project-card">
-        <div class="image-card">
-        <div class="logo-card"></div>
-      </div>
-        <h4>Title</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-          dolores, quia aut asperiores, accusantium ratione porro sit, corporis
-          voluptatibus aliquam totam. Ab aut repudiandae maxime nam dolore quod
-          veniam error.
-        </p>
-        <a class="cta" href="#">See Project</a>
-      </div>
-      
-    </div>
-    <a class="cta" href="#">See More</a>
-  </section>
+      <a class="cta" href="#">See More</a>
+    </section>
     <footer>
       <div><h2>¡Gracias por llegar hasta acá!</h2></div>
       <div>
